@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính cầm tay</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input id="numberOne" placeholder="Số thứ nhất" type="text">
+<input id="numberTwo" placeholder="Số thứ hai" type="text">
+<br>
+<button onclick="add()">Addition(+)</button>
+<button onclick="sub()">Subtraction(-)</button>
+<button onclick="Mul()">Multiplication(X)</button>
+<button onclick="Div()">Division(/)</button>
+<div id="result"></div>
+<script>
+    function add(){
+        let numberOne = parseInt(document.getElementById("numberOne").value);
+        let numberTwo = parseInt(document.getElementById("numberTwo").value);
+        let result = numberOne + numberTwo;
+        document.getElementById("result").innerHTML = "Kết quả: " + result;
+    }
+    function sub(){
+        let numberOne = parseInt(document.getElementById("numberOne").value);
+        let numberTwo = parseInt(document.getElementById("numberTwo").value);
+        let result = numberOne - numberTwo;
+        document.getElementById("result").innerHTML = "Kết quả: " + result;
+    }
+    function Mul(){
+        let numberOne = parseInt(document.getElementById("numberOne").value);
+        let numberTwo = parseInt(document.getElementById("numberTwo").value);
+        let result = numberOne*numberTwo;
+        document.getElementById("result").innerHTML = "Kết quả: " + result;
+    }
+    function Div(){
+        let numberOne = parseInt(document.getElementById("numberOne").value);
+        let numberTwo = parseInt(document.getElementById("numberTwo").value);
+        let result = numberOne/numberTwo;
+        document.getElementById("result").innerHTML = "Kết quả: " + result;
+    }
+</script>
+
+</body>
+</html>
